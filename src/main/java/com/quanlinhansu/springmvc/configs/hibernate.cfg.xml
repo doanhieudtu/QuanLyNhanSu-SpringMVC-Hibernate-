@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-5.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+<property name="hibernate.connection.url">jdbc:sqlserver://DESKTOP-DOAN-HI\\SQLEXPRESS:1433;databaseName=QuanLyNhanSu;user=sa;password=123456</property>
+<property name="hibernate.connection.username">sa</property>
+<property name="hibernate.connection.password">123456</property>
+<property name="hibernate.connection.pool_size">10</property>
+<property name="show_sql">true</property>
+<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+<property name="hibernate.current_session_context_class">thread</property>
+<mapping class="com.quanlinhansu.springmvc.model.ChucVu" />
+<mapping class="com.quanlinhansu.springmvc.model.Luong" />
+<mapping class="com.quanlinhansu.springmvc.model.NhanVien" />
+<mapping class="com.quanlinhansu.springmvc.model.NhanVienChucVu" />
+<mapping class="com.quanlinhansu.springmvc.model.PhongBan" />
+<mapping class="com.quanlinhansu.springmvc.model.TrinhDoHocVan" />
+<mapping class="com.quanlinhansu.springmvc.model.Admin" />
+
+</session-factory>
+</hibernate-configuration>
